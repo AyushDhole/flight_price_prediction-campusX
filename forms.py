@@ -43,7 +43,7 @@ class InputForm(FlaskForm):
         choices=X_data.destination.unique().tolist(),     #unique converts 'pandas series' to 'np array'; tolist converts it to 'python list'
         validators=[DataRequired()]
     )
-    dept_time= TimeField(
+    dep_time= TimeField(
         label="Departure Time",
         validators= [DataRequired()]
     )

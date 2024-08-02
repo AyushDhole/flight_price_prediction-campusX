@@ -44,10 +44,10 @@
    </div>
    <br>
    <div>
-        {{ form.dept_time.label }}
-        {{ form.dept_time }}
-        {% if form.dept_time.errors %}
-        {% for error in form.dept_time.errors %}
+        {{ form.dep_time.label }}
+        {{ form.dep_time }}
+        {% if form.dep_time.errors %}
+        {% for error in form.dep_time.errors %}
             <div>{{ error }}</div>
         {% endfor %}
     {% endif %}
@@ -99,7 +99,7 @@
         {{ output }}
     </div>
     <div>
-        <p>Redirect to Homepage? <a href="{{ url_for('home')}}">Login</a></p>
+        <p>Redirect to Homepage? <a href="{{ url_for('home')}}">Homepage</a></p>
     </div>
 
 </form>

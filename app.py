@@ -24,7 +24,7 @@ def predict():
           date_of_journey = [form.date_of_journey.data.strftime("%Y-%m-%d")],   # Our model is expecting an object type for date_of_journey, etc. 
           source = [form.source.data],
           destination = [form.destination.data],
-          dept_time = [form.dept_time.data.strftime("%H:%M:%S")],
+          dep_time = [form.dep_time.data.strftime("%H:%M:%S")],
           arrival_time = [form.arrival_time.data.strftime("%H:%M:%S")],
           duration = [form.duration.data],
           total_stops = [form.total_stops.data],
